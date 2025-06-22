@@ -1,0 +1,91 @@
+/* Ocean-Themed Chatbot UI */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #b2f7ef, #40c9ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-wrapper {
+  width: 400px;
+  height: 550px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  color: #023047;
+}
+
+.user {
+  text-align: right;
+  margin: 10px 0;
+  color: #034078;
+  background: #d0f4ff;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 80%;
+}
+
+.bot {
+  text-align: left;
+  margin: 10px 0;
+  color: #014f86;
+  background: #e0f7fa;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  max-width: 80%;
+}
+
+.input-area {
+  display: flex;
+  border-top: 1px solid #ccefff;
+  background-color: #f0fbff;
+}
+
+input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-right: 1px solid #ccefff;
+  outline: none;
+  background: #f0fbff;
+}
+
+button {
+  padding: 15px;
+  background: #0096c7;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0077b6;
+}
